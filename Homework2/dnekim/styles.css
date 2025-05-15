@@ -1,0 +1,38 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .dashboard {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60% 40%; /* top row taller */
+    grid-template-areas:
+      "bar scatter"
+      "sankey sankey";
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  
+  #bar-chart {
+    grid-area: bar;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+  
+  #scatter-plot {
+    grid-area: scatter;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+  
+  #sankey-chart {
+    grid-area: sankey;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+  
